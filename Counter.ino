@@ -192,13 +192,13 @@ const byte PROGMEM lost_game_sound [] = {
   0x91,0x47, 0,53, 0,141, 0x80, 0x81, 0x82, 0x90,0x47, 0x91,0x44, 0x92,0x28, 0,95, 1,77, 0,202,
 0x80, 0x81, 0x90,0x45, 0,91, 0,136, 0x80, 0x82, 0x90,0x45, 0x91,0x2D, 7,83, 0x80, 0x81, 0xf0};
 
-// This function runs once in your game.
-// use it for anything that needs to be set only once in your game.
+
+
 void setup() {
   //initiate arduboy instance
   arduboy.beginNoLogo();
 
-  // here we set the framerate to 10, we do not need to run at default 60 and
+  // here we set the framerate to 30, we do not need to run at default 60 and
   // it saves us battery life.
   arduboy.setFrameRate(30);
   score = 40;
@@ -209,8 +209,7 @@ void setup() {
 }
 
 
-// our main game loop, this runs once every cycle/frame.
-// this is where our game logic goes.
+
 void loop() {
 
   if (!(arduboy.nextFrame()))
