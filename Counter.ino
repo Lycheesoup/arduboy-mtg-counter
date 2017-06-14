@@ -185,6 +185,7 @@ void loop() {
       arduboy.drawSlowXYBitmap(WIDTH/2-24,HEIGHT/2-32, skull,48,58,1);
     }else{
       //If we need negative life totals
+      arduboy.setCursor(22,8);
       arduboy.setTextSize(5);
     }
     arduboy.print(text);  
